@@ -1,13 +1,15 @@
-this folder is for sci-testing.
-1. Goal: Demonstrate your ability to work with common collaboration tools for software development.
-    Create a public GitHub repository to share the testing codes
-    https://github.com/arthurma2001/sci-testing.git
-2. Goal: Demonstrate your ability to design and write C++ applications.
-    Implement a CircularArray class in C++
-3. Goal: Demonstrate your ability to build Python scripts.
-    In python generate a script that will load in two 2D color images and evaluate the differences
-4. Goal: Assess algorithmic knowledge.
+This folder contain sub folders as followed -
+  task2 -  CircularArray (c++)
+  task3 -  diff two png (python)
+  btask1 - project dependencies (python)
+  btask2 - create affine transformation from points and test png combine by the transformation. (python)
+  btask3 - qt demo
+  data
+  README.md
 
-    
+Each directory contains README and there are detailed algorithm descriptions in the source code.
+
+I built the SCIRun on centos7.2 successfully. It took around 2 hours.
+
 
 

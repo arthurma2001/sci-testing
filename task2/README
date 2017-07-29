@@ -1,0 +1,19 @@
+I created the CircularArray and CircularArrayIter(iteration) as a C++ template. 
+I also created two test cases, as shown below - 
+  Case1 - basic test
+      CircularArray fa(12) - 12 elements array
+      fa[12] = 5;
+      assert (fa[0] == fa[12]); 
+      fa[-1]=101;
+      assert (fa[-1] == fa[11]);
+  Case 2 - iteration test
+      CircularArray<float> fa(N, 0);
+      CircularArrayIter<float> it(&fa, init_index);
+  
+      it.first();
+      int i = init_index;
+      while (! it.isDone()) {
+           cout << "i=" << i++ << ", " << it.currentItem() << endl;
+           it.next();
+      }
+

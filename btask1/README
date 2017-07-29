@@ -1,0 +1,20 @@
+Input:
+    projects: a, b, c, d, e, f
+    dependencies: (a, d), (f, b), (b, d), (f, a), (d, c)
+Output:
+    f, e, a, b, d, c
+
+Algorihm description -
+#  use ia as a's index 
+
+#0   initial - a, b, c, d, e, f
+#1   (a, d) -   a, b, c, d, e, f  (ia < id)
+#2   (f, b)  -   a, c, d, e, f, b  (ib < if, move b after f)
+#3   (b, d) -   a, c, e, f, b, d  (id < ib, move d after b)
+#4   (f, a)  -   c, e, f, a, b, d  (ia < if, move a after f)
+#5   (d, c) -    e, f, a, b, d, c (ic < id, move c after d)
+#6   check if all dependencies fit,  if not, repeat steps #1-6 until all dependencies fit.
+
+Comments -
+   I set the max loop number as length of the project list because conflict dependencies may exist.
+
